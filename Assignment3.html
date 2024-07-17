@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration</title>
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f9f9f9;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    
+
+}
+
+
+.icon img {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 100px;
+}
+
+h1 {
+margin-bottom: 1.5rem;
+font-size: 1.5rem;
+color: #333;
+}
+
+.input-group {
+margin-bottom: 1rem;
+}
+
+.input-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-size: 0.9rem;
+color: #666;
+align-items: center;
+width:400px;
+}
+
+.input-group input,
+.input-group select {
+width: 100%;
+padding: 0.75rem;
+border: 0px ;
+border-radius: 20px;
+font-size: 0.9rem;
+background-color: hwb(213 77% 16%);
+}
+
+button {
+background-color: #ff6600;
+color: #fff;
+padding: 0.75rem 1.5rem;
+border: none;
+border-radius: 30px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #e65c00;
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="icon">
+                <img src="data:image/jpeg;base64,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" alt="Cloud Icon">
+            </div>
+            <h1>Online registration</h1>
+            <form>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected> Select...</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        
+                    </select>
+                </div>
+                <button type="submit">Register now</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

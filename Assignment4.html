@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header,
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .main-content,
+        .sidebar {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .main-content {
+            width: 70%;
+        }
+
+        .sidebar {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
+    <div class="nav">
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar area.</p>
+        </div>
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+</body>
+
+</html>

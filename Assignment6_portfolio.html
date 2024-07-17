@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+}
+
+#about img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+#portfolio .card {
+  margin-bottom: 30px;
+}
+
+#contact {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 5px;
+}
+#about{
+    background-color: #bec6ce
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="photo.jpg" class="img-fluid rounded-circle" alt="Profile Picture">
+            </div>
+            <div class="col-md-8"><br><br>
+                <h2>About Me</h2>
+                <p>Hello! I'm Aishwarya, a web developer with a passion for creating beautiful and functional
+                    websites.  I'm always eager to learn new technologies and
+                    improve my skills.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mt-5">
+        <main>
+            <hr>
+            <h4>Education</h4>
+            <ul>
+                <li><b>10th Class (SSC)</b> : 88%</li>
+                <li><b>12th Class (HSC)</b> : 84%</li>
+            </ul>
+            <hr>
+            <h4>Skills</h4>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Java</li>
+                <li>PHP</li>
+            </ul>
+            <hr>
+            <h4>Hobbies</h4>
+            <ul>
+                <li>Painting</li>
+                <li>Editing</li>
+                <li>Crafting</li>
+            </ul>
+        </main>
+        
+        <hr>
+        <h4>Project</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">College Task Automation | Website</h5>
+                        <p class="card-text">By consolidating various administrative processes into a single, user-friendly platform, the website streamlines operations for both students and faculty members.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Let’s chat | Android based chatting Application</h5>
+                        <p class="card-text">This app explores its various aspects, such as strong security measures, real-time chatting,
+                        dynamic notifications, message deletion, expressive reactions, and personalized profiles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Library Management System | Website</h5>
+                        <p class="card-text">Website provides a centralized platform for librarians, administrators, and users to
+                        streamline various tasks such as cataloging books, managing member information,
+                        tracking loans, and facilitating online access to library resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <h4>Contact Me</h4>
+            <ul>
+                <li>Email : 992002aishwarya@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/aishwarya-pawar-b12246287/"">Linkedin</a></li>
+                <li><a href=" https://github.com/Aishwarya-pawar9">GitHub</a></li>
+            </ul>
+        </footer>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5 mb-5">
+        <h4>Contact</h4>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
